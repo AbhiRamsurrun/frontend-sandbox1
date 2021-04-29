@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Front end sandbox</title>
+        <!-- applying css to tags
+            <style>
+                p, span {
+                    color:red; 
+                    background: yellow; 
+                    border: 1px solid green; 
+                    padding: 10px 0 0 15px; 
+                    margin-top: 100px;
+                }
+            </style>
+        
+        <style>
+            .outline {
+                color:red; 
+                background:greenyellow; 
+                border: 1px solid black; 
+                padding: 10px 0 0 15px; 
+                margin-top: 100px;
+            }
+        </style>
+        -->
+        <link rel="stylesheet" href="assets\css\custom.css">
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+
+        <p>Welcome to frontend class</p>
+
+        <!--html is not case sensitive-->
+        <!--<SPAN class="outline">This is a span</SPAN>-->
+        <SPAN class="outline inline-block">This is a span</SPAN>
+
+        <br>
+
+        <!--Creating a Link-->
+        <a href="http://google.com" target="blank">Link</a>
+
+        <br>
+
+        <!--adding an image-->
+        <!--alt is for accessibility, when doing tab will reach the image and the reader will also display the text-->
+        <!--for not stretch image use only height or width and it will apply aspect ration (when width specified, will determine the relative height automatically) not damaging (pixelized or distoerted) the image stretching-->
+        <!--<img src="assets\image\pexels-carlos-diaz-709767.jpg" alt="home office" width="200" height="100">-->
+        <!--for hoverover text, use the title tag-->
+        <!--closing tag for image: it auto-adds the closing tag for us if not specified-->
+        <img src="assets\images\pexels-carlos-diaz-709767.jpg" alt="home office" width="200" title="I am a home office"/>
+        
+        <!--self closing tags: img, br, input, link-->
+
+        <!--inline css
+            property color represents color of text
+            property background: background color
+            property display: represents the way block of texts are displayed
+            property padding: diff between padding and margin
+                padding: is inside border, if 4 values, top, right, bottom, left -> clockwise, 
+                        if 2 values 10px 50px : top 10, bottom 10, right 50, left 50
+                        padding: 10px 50px 20px: top 10, right 50, bottom 20, left 50 (uses the right one)
+                margin: is outside
+        -->
+        <p style="color:red; background: yellow; border: 1px solid green; padding: 10px 0 0 15px; margin-top: 100px;">
+            Welcome to frontend class</p>
+
+        <p class="outline">this is end of this page</p>
+            
+        <!-- Priority of css applied
+            1. inline css
+            2. internal css (embedded/style in head tag)
+            3. external css
+        -->
+
+        <!--
+            difference between span and p
+            span: is an inline element (exists only y-axis) - uses only the text's width, not full - next elemt comes after the width, padding applies, but margin does not apply to inline element (can use inline-block/block*)
+            p: p is a block element (exists x and y axis) - uses full width - next elements coming after goes on next line
+            *inline-block => remains an inline element, does not take full width (not a block), but margin apples as well as padding
+             block => remains an inline element but behaves like a block (takes full width), padding and margin both applies
+        -->
+
+        <!--Bold
+            b Vs strong
+            tag b/i/u: the text is bold, italic, underline => css
+            tag strong/em: Important on SEO level: adds meaning to my html, when reading the html, more understandable to SEO
+            SEO: header, footer, nav etc, when robot reads html file it understands, semantics
+            Good practice is that We do not include css (b/i/u) in html 
+            SEO tips: mobile, different browsers on desktop, browsers under IE10 not really need to check but unless the client asks same
+        -->
+
+        <!--applied css sup id vs class-->
+        <h2>
+            <small>Welcome</small> <strong>to frontend</strong> class.<sup>TM.<sup>
+        </h2>
+
+        <!--in css, #for id, . is for class and nothing is for tag => custom.css, id takes precedence over class-->
+        <p id="bg-blue" class="outline">
+            This is the end of the page
+        </p>
+
+        <!-- Adding comments
+            Shortcut key: ctrl+k+c or ctrl+/
+             Highlight for several lines and then try shortcut key, no need to highlight for a single line
+        -->
+        
+        </body>
+
+</html>

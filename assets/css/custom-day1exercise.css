@@ -1,0 +1,47 @@
+* , html, body{
+    padding:0;
+    margin:0;
+    min-width:0;
+}
+
+body{
+    color: #ffffff;
+}
+
+.header{
+    background:lightskyblue;
+    padding: 2%;
+}
+
+.container{
+    padding:5px 0;
+    text-align: center;
+}
+
+.main-content{
+    background:lightgreen;
+    width: 40%;
+    height: 45vh;
+}
+
+.sidebar{
+    background: violet;
+    width: 30%;
+    height: 45vh;
+}
+
+.twin{
+    background: orangered;
+    width:35%;
+    height: 30vh;
+    margin: 5px 0 0 0;
+}
+
+.footer{
+    background: blue;
+    padding: 2%;
+}
+
+.inline-block{
+    display: inline-block;
+}
