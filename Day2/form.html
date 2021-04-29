@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="../assets/css/form.css">
+</head>
+
+<body>
+    <form action="">
+        <fieldset>    
+            <legend>Personal Info</legend>    
+            <div class="row">          
+                <label class="label" for="fname">First Name:</label>
+                <input id ="fname" class="form-control" type="text">
+            </div>
+            <div class="row">
+                <label class="label" for="">Last Name:</label>
+                <input class="form-control" type="text">
+            </div>
+            <div class="row">
+                <label class="label" for="">Email</label>
+                <input class="form-control" type="email">
+            </div>
+            <div class="row">
+                <label for="" class="label">DOB</label>
+                <input type="date" class="form-control">
+            </div>
+            <div class="row">
+                <label for="" class="label">Gender</label>
+                <label for="male" class="">Male</label>
+                <input name="gender" id="male" class="form-control-radio" type="radio">
+                <label for="female" class="">Female</label>
+                <input name="gender" id="female" class="form-control-radio" type="radio">
+                <label for="other" class="">Other</label>
+                <input name="gender" id="other" class="form-control-radio" type="radio">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Work</legend>
+            <div class="row">
+                <label for="" class="label">Department</label>
+                <input list="departments" type="text" class="form-control">
+                <datalist id="departments">
+                    <option value="Technology"></option>
+                    <option value="Support"></option>
+                    <option value="Networking"></option>
+                    <option value="Finance"></option>
+                </datalist>
+            </div>
+            <div class="row">
+                <label for="" class="label">Choose a car</label>
+                <select name="" id="" class="form-control">
+                    <optgroup label="Swedish Car">
+                        <option value="Volvo">Volvo</option>
+                        <option value="VW">VW</option>
+                    </optgroup>
+                    <optgroup label="German Car">
+                        <option value="Audi">Audi</option>
+                        <option value="Merc">Merc</option>
+                    </optgroup>
+                </select>
+            </div>
+                <div class="row">
+                    <div class="wrap">
+                        <label for="" class="label">Message</label>
+                        <textarea name="" id="" cols="30" rows="3" class="form-control"></textarea>
+                    </div>
+                    
+                </div>          
+        </fieldset>               
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+    </html>

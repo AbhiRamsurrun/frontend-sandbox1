@@ -1,0 +1,42 @@
+* , html, body{
+    padding:0;
+    margin:0;
+    min-width:0;
+}
+.header{
+    background-color:grey;
+    padding:10px 0 0 10px;
+}
+
+.nav-bar-item{
+    display: inline-block;
+    width: 24%;
+}
+
+.nav-bar{
+    margin:10px 0 0 0;
+    text-align: center;
+}
+
+.bg-lightcoral{
+    background-color: lightcoral;
+}
+
+.bg-lightblue{
+    background-color: lightblue;
+}
+
+.bg-lightslategrey{
+    background-color: lightslategrey;
+}
+
+.bg-lightgreen{
+    background-color:lightgreen;
+}
+.nav-bar-link{
+    padding:10px 0;
+    display: block;
+}
+.home-section{
+    height: 100vh;
+}
