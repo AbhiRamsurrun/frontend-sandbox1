@@ -1,0 +1,86 @@
+*,html,body {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    border: 0;
+}
+
+.bg-aqua{
+    background-color:#73D2E9
+}
+
+.bg-green{
+    background-color:#A7C16B;
+}
+
+.bg-mustard{
+    background-color:#F0C746 ;
+}
+
+.bg-lightgrey{
+    background-color: #898989;
+}
+
+.bg-orange{
+    background-color:#F5A92B ;
+}
+
+.bg-purple{
+    background-color: #D4CAE2;
+}
+
+.bg-seagreen{
+    background-color: #5AB379;
+}
+
+.bg-pink{
+    background-color: #EDCFDD;
+}
+
+body{
+    color: #ffff;
+    text-align: center;
+    font-size: 17px;
+}
+
+.header{
+    padding: 5px;
+}
+
+.footer{
+    padding: 5px;
+}
+
+.content-section{
+    display: inline-block;
+}
+
+.image-section{
+    display: inline-block;
+}
+
+.content-left{
+    width: 39%;
+    vertical-align: top;
+}
+
+.content-right{
+    width: 60%;
+}
+
+.hero{
+    height:150px ;
+}
+
+.sidebar{
+    height:250px;
+    display: inline-block;
+}
+
+.maincontent{
+    height:300px;
+}
+
+.extracontent{
+    height:100px;
+}
