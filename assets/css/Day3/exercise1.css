@@ -1,0 +1,52 @@
+*,html,body {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    border: 0;
+}
+
+.navigation{
+    background:  deepskyblue;
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+.link{
+    padding: 10px 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Apply this text in the html - pseudo element*/
+.navigation li::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    top:30%;
+    color: #fff;
+}
+
+.navigation li:last-child::after{
+    content: '';
+}
+.navigation li{
+    position: relative;
+}
+.link:hover{
+    background:navy;
+}
+
+/* Example 2 */
+.flex-container{
+    display: flex;
+    list-style: none;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.flex-item{
+    background: tomato;
+    width: 100px;
+    height: 100px;
+}

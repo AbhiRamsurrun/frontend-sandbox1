@@ -1,0 +1,55 @@
+*,html,body {
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    border: 0;
+}
+
+body{
+    color: #fff;
+}
+.header{
+    background: lightblue;
+    padding: 10px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 150px;
+}
+
+.upper{
+    display: flex;
+    height: 45vh;
+}
+
+.main-content{
+    background: green;
+    flex-grow:2;
+    margin: 5px 5px 5px 0;
+    align-items: center;
+}
+.sidebar{
+    background: purple;
+    flex-grow:1;
+    margin: 5px 0 5px 0;
+
+}
+.lower{
+    display: flex;
+}
+.twin{
+    background: orange;
+    flex-grow: 1;
+    margin: 0 5px 5px 0;
+    height: 40vh;
+}
+
+.twin:last-child{
+    margin-right: 0px;;
+}
+
+.footer{
+    background: navy;
+}
