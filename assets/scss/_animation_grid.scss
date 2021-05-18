@@ -1,0 +1,36 @@
+.animated-grid{
+    height: 85vh;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas: 
+    'a  b  c  d'
+    'x  x  l  e'
+    'x  x  k  f'
+    'j  i  h  g';
+    grid-template-rows: repeat(4,25%);
+    grid-template-columns: 240px auto auto 240px;
+}
+
+.card{
+    animation: cardEntrance 2s ease-out;
+    animation-fill-mode: backwards;
+    
+    @each $current in $grid-sections {
+        $i:index($grid-sections, $current);
+        &:nth-child(#{$i}){
+            grid-area: $current;
+            animation-delay: calc(#{$i}*#{$animation-delay});
+        } 
+    }
+}
+
+@keyframes cardEntrance{
+    from{
+        opacity: 0;
+        transform: scale(0.3) rotate(27deg);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "frontend-sandbox1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbhiRamsurrun/frontend-sandbox1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbhiRamsurrun/frontend-sandbox1/issues"
+  },
+  "homepage": "https://github.com/AbhiRamsurrun/frontend-sandbox1#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
